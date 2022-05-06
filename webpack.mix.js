@@ -18,6 +18,11 @@ mix.js('resources/js/app.js', 'public/js').vue()
     ])
     .alias({
         '@': 'resources/js',
+    }).options({
+        hmrOptions: {
+            host: 'localhost',
+            port: 4206
+        }
     });
 
 if (mix.inProduction()) {
